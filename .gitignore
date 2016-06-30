@@ -1,3 +1,4 @@
 *.pyc
 db.sqlite3
 tango_with_django_project/settings_secret.py
+notes.txt
