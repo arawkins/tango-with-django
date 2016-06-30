@@ -14,7 +14,16 @@
         <li><a href='/rango/about/'>About</a></li>
     </ul>
 
-    <p>{{ content }}</p>
+    {% if categories %}
+    <ul>
+        {% for category in categories %}
+            <li>{{ category.name }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>There are no categories present.</p>
+    {% endif %}
+
 
 </body>
 
